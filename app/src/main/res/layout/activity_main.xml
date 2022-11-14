@@ -6,13 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <LinearLayout
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageButton3"
+            android:layout_width="92dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/Circulo"
+            app:srcCompat="@color/teal_200"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="294dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="120dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="30dp">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Asunto" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fecha"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="291dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="58dp">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contenido" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Estrellita" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
